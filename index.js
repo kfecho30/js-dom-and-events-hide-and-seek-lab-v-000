@@ -1,3 +1,3 @@
 function getFirstSelector(selector) {
-  returndocument.querySelector(selector)
+  return document.querySelector(selector)
 }
