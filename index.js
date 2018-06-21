@@ -14,16 +14,14 @@ function increaseRankBy(n){
 }
 
 function deepestChild(){
-  const node = document.querySelector('#grand-node')
-  
+  let node = document.getElementById('grand-node')
+  let next = node.children[0]
 
-  while(node.length>0){
-    let n = node.shift();
-    node[n].links.forEach(function(childIndex){
-      if(!node[ChildIndex].visited){
-        node[childIndex].visited = true;
-        node.push(childIndex);
-      }
-    })
+
+  while(next){
+    node = next
+    next = node.children[0]
   }
+
+  return node
 }
