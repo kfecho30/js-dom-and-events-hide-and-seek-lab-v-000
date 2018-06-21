@@ -15,4 +15,15 @@ function increaseRankBy(n){
 
 function deepestChild(){
   const node = document.querySelector('#grand-node')
+  
+
+  while(node.length>0){
+    let n = node.shift();
+    node[n].links.forEach(function(childIndex){
+      if(!node[ChildIndex].visited){
+        node[childIndex].visited = true;
+        node.push(childIndex);
+      }
+    })
+  }
 }
